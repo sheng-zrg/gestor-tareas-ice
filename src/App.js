@@ -20,7 +20,7 @@ function App() {
         const scoreB = calcularScore(b.impact, b.confidence, b.ease);
         return scoreB - scoreA;
     });
-    return (_jsxs("div", { className: "app", children: [_jsx(Navbar, { totalTasks: tasks.length }), _jsxs("main", { style: { padding: 16 }, children: [_jsx(FormCrearTarea, { onAddTask: addTask }), _jsx(TaskList, { tasks: sortedTasks, onAction: handleAction }), _jsx(PriorityModal, { task: selectedTask, open: open, onClose: closeModal, onSave: (changes) => {
+    return (_jsxs("div", { className: "app", children: [_jsx(Navbar, { totalTasks: tasks.length }), _jsxs("main", { children: [_jsx(FormCrearTarea, { onAddTask: addTask }), _jsx(TaskList, { tasks: sortedTasks, onAction: handleAction }), _jsx(PriorityModal, { task: selectedTask, open: open, onClose: closeModal, onSave: (changes) => {
                             if (selectedTask) {
                                 updateTask(selectedTask.id, changes);
                                 closeModal();

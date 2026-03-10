@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="app">
       <Navbar totalTasks={tasks.length} />
-      <main style={{ padding: 16 }}>
+      <main>
         <FormCrearTarea onAddTask={addTask} />
         <TaskList tasks={sortedTasks} onAction={handleAction} />
         <PriorityModal
