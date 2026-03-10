@@ -1,8 +1,5 @@
 import React from 'react'
-import { Navbar } from './Navbar'
-import { FormCrearTarea } from './FormCrearTarea'
-import { TaskList } from './TaskList'
-import { PriorityModal } from './PriorityModal'
+import { Navbar, FormCrearTarea, TaskList, PriorityModal } from './components'
 import { useTareas, useModal } from './hooks'
 
 function App() {

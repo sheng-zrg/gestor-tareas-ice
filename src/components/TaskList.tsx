@@ -1,5 +1,5 @@
 import React from 'react'
-import { Task } from './types'
+import { Task } from '../types'
 import { TaskCard } from './TaskCard'
 
 interface Props { tasks: Task[]; onAction: (e: any) => void }

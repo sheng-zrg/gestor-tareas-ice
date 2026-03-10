@@ -4,8 +4,8 @@ import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
 import CardActions from '@mui/material/CardActions'
 import Button from '@mui/material/Button'
-import { Task } from './types'
-import { calcularScore } from './utils/ice'
+import { Task } from '../types'
+import { calcularScore } from '../utils/ice'
 
 interface Props {
   task: Task
