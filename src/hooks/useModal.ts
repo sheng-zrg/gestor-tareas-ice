@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ModalState, Task } from './types'
+import { ModalState, Task } from '../types'
 
 export function useModal() {
   const [state, setState] = useState<ModalState>({ open: false, selectedTask: null })
