@@ -1,7 +1,7 @@
 import { useCallback } from 'react'
 import { useLocalStorage } from './useLocalStorage'
-import { Task } from './types'
-import { calcularScore } from './utils/ice'
+import { Task } from '../types'
+import { calcularScore } from '../utils/ice'
 
 export function useTareas() {
   const [tasks, setTasks] = useLocalStorage<Task[]>('gestor-tareas-ice-tasks', [])

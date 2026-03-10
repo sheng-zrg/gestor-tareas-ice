@@ -3,8 +3,7 @@ import { Navbar } from './Navbar'
 import { FormCrearTarea } from './FormCrearTarea'
 import { TaskList } from './TaskList'
 import { PriorityModal } from './PriorityModal'
-import { useTareas } from './useTareas'
-import { useModal } from './useModal'
+import { useTareas, useModal } from './hooks'
 
 function App() {
   const { tasks, addTask, updateTask, deleteTask } = useTareas()
