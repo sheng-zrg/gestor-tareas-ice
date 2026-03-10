@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button'
 import Box from '@mui/material/Box'
-import { analyzeTask } from './services/gemini'
-import { Task } from './types'
+import { analyzeTask } from '../services/gemini'
+import { Task } from '../types'
 
 interface Props { onAddTask: (t: Omit<Task, 'id'>) => void }
 
